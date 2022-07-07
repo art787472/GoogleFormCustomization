@@ -1,0 +1,90 @@
+h1 {
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+}
+
+.container {
+  width: 428px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.text-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 38px;
+  border: 1px solid #ced4da;
+  padding: 1px 10px 1px 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  font-family: "PingFang TC";
+}
+
+.checkbox-input {
+  width: 16px;
+  height: 16px;
+
+  background: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  display: inline;
+}
+
+button {
+  width: 100%;
+  height: 38px;
+  margin-top: 24px;
+  margin-bottom: 11px;
+  /* body color */
+  background: #212529;
+  color: white;
+}
+
+.first-block {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding-right: 3px;
+  border-width: thin;
+}
+
+select {
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+}
+
+@media screen and (min-width: 850px) {
+  .container {
+    width: 834px;
+  }
+  .first-block {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .block {
+    box-sizing: border-box;
+    flex: 1;
+  }
+
+  .block + .block {
+    margin-left: 12px;
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>六角表單</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>六角西餐廳</h1>
+    <div class="container">
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSebsfMW4WS4-JOv4cGTb69uQQIyezZCs0XziSMzr07mtZeeqg/formResponse"
+        method="POST"
+      >
+        <div class="first-block">
+          <div class="block">
+            <label for="name">姓名</label>
+            <input
+              class="text-input"
+              id="name"
+              type="text"
+              required
+              name="entry.1843112855"
+            />
+          </div>
+          <div class="block">
+            <label for="phone">電話</label>
+            <input
+              class="text-input"
+              id="phone"
+              type="text"
+              required
+              name="entry.965111505"
+            />
+          </div>
+        </div>
+        <label for="phone">日期</label>
+        <input class="text-input" type="date" />
+        <input type="hidden" id="year" name="entry.1950415386_year" value="" />
+        <input
+          type="hidden"
+          id="month"
+          name="entry.1950415386_month"
+          value=""
+        />
+        <input type="hidden" id="day" name="entry.1950415386_day" value="" />
+        <label for="customer-number">用餐人數</label>
+        <select
+          class="text-input"
+          id="customer-number"
+          required
+          name="entry.1378186797"
+        >
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <label for="others">其它項目</label>
+        <input
+          class="checkbox-input"
+          type="checkbox"
+          id="option1"
+          name="entry.320698855"
+          value="需要兒童座椅"
+        />
+        <label class="checkbox-label" for="option1"> 需要兒童座椅</label>
+        <br />
+        <input
+          class="checkbox-input"
+          type="checkbox"
+          id="option2"
+          name="entry.320698855"
+          value="素食餐點"
+        />
+        <label class="checkbox-label" for="option2"> 素食餐點</label>
+        <br />
+        <input
+          class="checkbox-input"
+          type="checkbox"
+          id="option3"
+          name="entry.320698855"
+          value="吸煙區"
+        />
+        <label class="checkbox-label" for="option3"> 吸煙區</label>
+        <br />
+        <button type="submit">送出</button>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
